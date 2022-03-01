@@ -9,4 +9,6 @@ deposit = (list(per_cent.values()))
 print(deposit)
 # ищем максимальную сумму
 max = max(deposit)
-print(max)
+# улучшаем
+var = ("Максимальная сумма, которую вы можете заработать —")
+print(var, max_key, max)
