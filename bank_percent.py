@@ -1,14 +1,9 @@
 per_cent = {'ТКБ': 5.6, 'СКБ': 5.9, 'ВТБ': 4.28, 'СБЕР': 4.0} # Данные
-max_key = max(per_cent, key=lambda k: per_cent[k]) # Вытаскиваем лучший банк
-many = int(input('сколько бабок вложить?:')) # запрос на лишние бабки
-# создаем цикл на результат через год
+money = int(input('Вложенная сумма?:')) 
 for key in per_cent:
-    per_cent[key] = int(per_cent[key] * many / 100)
+    per_cent[key] = int(per_cent[key] * money / 100)
 deposit = (list(per_cent.values()))
-# Сколько получилось?
 print(deposit)
-# ищем максимальную сумму
 max = max(deposit)
-# улучшаем
 var = ("Максимальная сумма, которую вы можете заработать —")
-print(var, max_key, max)
+print(var, max)
